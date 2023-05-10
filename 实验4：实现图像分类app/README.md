@@ -44,7 +44,9 @@
 ![图 8](images/eac4a1838702157ffe76a5c6f10e82a51d9bc9606b07c1406c260694caa135a4.png)  
 
 6.以物理设备重新运行start模块
+
 7.最终运行效果
+
 ![图 9](images/18bde5f81279f30ce819bd061d36f192b458eebcd5fdf7cd29ab35442ef4c0dc.png)  
 
 ![图 10](images/aee374d0994685fcfe6277c212b4bff68b4f474708c6e9145db8bfd2fadce1ee.png)  
