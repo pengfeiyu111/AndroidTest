@@ -33,14 +33,16 @@
 ![图 5](images/0ce6064603ba19e4e9128525112b2d65f576c7764c918bf9fb3388815801bd95.png)  
 
 3.对图像进行处理并生成结果，主要包含下述操作：
-按照属性score对识别结果按照概率从高到低排序
-列出最高k种可能的结果，k的结果由常量MAX_RESULT_DISPLAY定义
+
+按照属性score对识别结果按照概率从高到低排序列出最高k种可能的结果，k的结果由常量MAX_RESULT_DISPLAY定义
+
 ![图 6](images/0d4367e7e8f2c45249d7553ceea175d091913ac2a7960ae2327db51a73891e9b.png)  
 
 4.将识别的结果加入数据对象Recognition 中，包含label和score两个元素。后续将用于RecyclerView的数据显示
 ![图 7](images/870915fc7a6aeb173ffae927a318d2e650319c70cdcd1d99301b58013e2b2286.png)  
 
 5.将原先用于虚拟显示识别结果的代码注释掉或者删除
+
 ![图 8](images/eac4a1838702157ffe76a5c6f10e82a51d9bc9606b07c1406c260694caa135a4.png)  
 
 6.以物理设备重新运行start模块
