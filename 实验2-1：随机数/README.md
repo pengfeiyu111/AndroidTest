@@ -4,7 +4,8 @@
 ## 创建一个新的工程
 打开Android Studio，选择Projects>New Project，然后选择Basic Activity.
 
-[图片]
+![图 1](images/bd0a2d4708345496070fdeb86d5748517d3a17ed42e9df4b88549768f62d9de1.png)  
+
 
 点击Next，为应用程序命名（例如：My First App），选择Kotlin语言，然后点击Finish。Android Studio将使用系统中最新的API Level创建应用程序，并使用Gradle作为构建系统，在底部的视窗中可以查看整个过程。
 
@@ -12,21 +13,27 @@
 ## 创建模拟器
 次步骤创建可以运行APP的模拟器，点击Tool>Device Manager或者工具栏上的按钮
 
-[图片]
+![图 3](images/a90ecd3f87b4fd3f746d4d815fa573648d2cb5962921121a3775cc2ce052c2b6.png)  
+
 
 点击Create device，弹出创建模拟器的页面，
 
-[图片]
+![图 4](images/fdbdb53ddf0ab17a40751184c15a86f25d472135a0be93aab9ba9c1c4fd3d200.png)  
+
 
 选择想要创建模拟器设备（如Pixel 5），点击Next，在系统镜像页面的Recommended标签栏，选择最新镜像，
 
-[图片]
+![图 5](images/63bdcf0a048f2cd605f4a0b69cd76397d25d2d0f931a58d28a8c72b616c50f8d.png)  
+
 
 然后首先下载镜像（Download），下载完成之后点击Next，完成模拟器命名和更多参数选择，最终点击Finish完成。注意：真实型号机型的模拟器镜像往往十分巨大，如果硬盘空间不足，考虑下载通用模拟器镜像。
 
 
 ## 在模拟器上运行应用程序
-[图片]
+![图 6](images/9aafe041d5228c4235c2944ca53afeff251b0c89de74f061345ba81769baf3df.png)  
+
+![图 7](images/6c08ceea9761b9a91214bb3aab608fcba3a4fe11750f3c9e2df06edb37a81afc.png)  
+
 
 ## 向页面添加更多的布局
 修改后的fragment_first.xml的代码
@@ -113,3 +120,12 @@
         }
 
 
+## 完成第二界面的代码
+此步骤将完成按照First Fragment显示数字作为上限，随机在Second Fragment上显示一个数字，即Random按钮的事件响应。效果如下：
+![图 9](images/fe596174e549c09f6409d8a03d8a87b0fe664fbef514c43c3f16a2db7249e034.png)  
+
+![图 10](images/ccc7f9045264ea5bfd2ae384a3faf2bd65f9b97233cf6fea80f4c612a207c02b.png)  
+
+![图 11](images/657c6eebe00fd20c977b7e564707bf6a5bf2f1286eac0d0858664306ffeefad2.png)  
+
+![图 12](images/0c4c3b8e277e855c4f72903e10bb3661557d56708caccf2ddd7b680cdd237f75.png)  
