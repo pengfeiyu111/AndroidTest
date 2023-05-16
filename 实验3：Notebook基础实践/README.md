@@ -1,87 +1,450 @@
-<p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:18.0000pt;
-mso-font-kerning:1.0000pt;"><font face="宋体"><b>实验</b></font><font face="Calibri"><b>3_Notebook</b></font><font face="宋体"><b>基础实践</b></font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:18.0000pt;
-mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="宋体"><b>简单的</b></font><font face="Calibri"><b>Python</b></font><font face="宋体"><b>程序的例子</b></font></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">打开</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">Jupyter Notebook</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">&nbsp;<font face="宋体">新建</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">Notebook Python 3</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="宋体">导入相关的工具库</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">%matplotlib inline<br /><span style="color:#cc7832;">import </span>pandas <span style="color:#cc7832;">as </span>pd<br /><span style="color:#cc7832;">import </span>matplotlib.pyplot <span style="color:#cc7832;">as </span>plt<br /><span style="color:#cc7832;">import </span>seaborn <span style="color:#cc7832;">as </span>sns</pre><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="宋体">随后，加载数据集。</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">df = pd.read_csv<span style="color:#e8ba36;">(</span><span style="color:#6a8759;">'C:</span><span style="color:#cc7832;">\\</span><span style="color:#6a8759;">Users</span><span style="color:#cc7832;">\\</span><span style="color:#6a8759;">Black_belly</span><span style="color:#cc7832;">\\</span><span style="color:#6a8759;">Desktop</span><span style="color:#cc7832;">\\</span><span style="color:#6a8759;">fortune500.csv'</span><span style="color:#e8ba36;">)</span></pre><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="Calibri">df.head()</font><font face="宋体">显示数据表头部</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic1.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="Calibri">df.tail()</font><font face="宋体">显示数据表尾部</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic2.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="宋体">对数据属性列进行重命名，以便在后续访问</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">df.columns = <span style="color:#e8ba36;">[</span><span style="color:#6a8759;">'year'</span>, <span style="color:#6a8759;">'rank'</span>, <span style="color:#6a8759;">'company'</span>, <span style="color:#6a8759;">'revenue'</span>, <span style="color:#6a8759;">'profit'</span><span style="color:#e8ba36;">]</span></pre><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="Calibri">l</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="Calibri">en(df)</font><font face="宋体">显示数据条数</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic3.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">df</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">dtypes</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">显示表格中的数据类型</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic4.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="宋体">用正则表达式查询有无</font><font face="Calibri">profit</font><font face="宋体">为空的情况</font></span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">non_numberic_profits = df.profit.str.contains<span style="color:#e8ba36;">(</span><span style="color:#6a8759;">'[^0-9.-]'</span><span style="color:#e8ba36;">)<br /></span>df.loc<span style="color:#e8ba36;">[</span>non_numberic_profits<span style="color:#e8ba36;">]</span>.head<span style="color:#e8ba36;">()</span></pre><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic5.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">len</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">(df.profit[non_numberic_profits])</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="宋体">查询有多少</font><font face="Calibri">profit</font><font face="宋体">为空</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><div><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic6.png" /></div><div><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><br /></span></div><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span><span style="font-size: 10.5pt; font-family: Calibri;"><font face="宋体">使用直方图显示一下按照年份的利润（</font>profit<font face="宋体">）列</font></span><span style="font-size: 10.5pt; font-family: 宋体;">为空</span><span style="font-size: 10.5pt; font-family: Calibri;"><font face="宋体">的记录</font></span><span style="font-size: 10.5pt; font-family: 宋体;">的</span><span style="font-size: 10.5pt; font-family: Calibri;"><font face="宋体">分布情况</font></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">bin_sizes, _, _ = plt.hist<span style="color:#e8ba36;">(</span>df.year<span style="color:#e8ba36;">[</span>non_numberic_profits<span style="color:#e8ba36;">]</span>, bins=range<span style="color:#54a857;">(</span><span style="color:#6897bb;">1955</span>, <span style="color:#6897bb;">2006</span><span style="color:#54a857;">)</span><span style="color:#e8ba36;">)</span></pre><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic7.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">为空数据量不多，</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="宋体">因此删除这些记录。</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">df = df.loc<span style="color:#e8ba36;">[</span>~non_numberic_profits<span style="color:#e8ba36;">]<br /></span>df.profit = df.profit.apply<span style="color:#e8ba36;">(</span>pd.to_numeric<span style="color:#e8ba36;">)</span></pre><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><font face="宋体">删除后数据总量减少</font> <font face="Calibri">profit</font><font face="宋体">数据类型变为</font><font face="Calibri">float</font></span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic8.png" /></p><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic9.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">定义曲线绘制方法</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">group_by_year = df.loc<span style="color:#e8ba36;">[</span>:, <span style="color:#54a857;">[</span><span style="color:#6a8759;">'year'</span>, <span style="color:#6a8759;">'revenue'</span>, <span style="color:#6a8759;">'profit'</span><span style="color:#54a857;">]</span><span style="color:#e8ba36;">]</span>.groupby<span style="color:#e8ba36;">(</span><span style="color:#6a8759;">'year'</span><span style="color:#e8ba36;">)<br /></span>avgs = group_by_year.mean<span style="color:#e8ba36;">()<br /></span>x = avgs.index<br />y1 = avgs.profit<br /><span style="color:#cc7832;">def </span>plot<span style="color:#e8ba36;">(</span>x, y, ax, title, y_label<span style="color:#e8ba36;">)</span>:<br />ax.set_title<span style="color:#e8ba36;">(</span>title<span style="color:#e8ba36;">)<br /></span>ax.set_ylabel<span style="color:#e8ba36;">(</span>y_label<span style="color:#e8ba36;">)<br /></span>ax.plot<span style="color:#e8ba36;">(</span>x, y<span style="color:#e8ba36;">)<br /></span>ax.margins<span style="color:#e8ba36;">(</span>x=<span style="color:#6897bb;">0</span>, y=<span style="color:#6897bb;">0</span><span style="color:#e8ba36;">)</span></pre><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><div><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">平均利润曲线</span></div><div><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">fig, ax = plt.subplots<span style="color:#e8ba36;">()<br /></span>plot<span style="color:#e8ba36;">(</span>x, y1, ax, <span style="color:#6a8759;">'Increase in mean Fortune 500 company profits from 1955 to 2005'</span>, <span style="color:#6a8759;">'Profit (millions)'</span><span style="color:#e8ba36;">)</span></pre></div><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic10.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;">&nbsp;</span></p><div><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">平均收入曲线</span></div><div><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;">y2 = avgs.revenue<br />fig, ax = plt.subplots<span style="color:#e8ba36;">()<br /></span>plot<span style="color:#e8ba36;">(</span>x, y2, ax, <span style="color:#6a8759;">'Increase in mean Fortune 500 company revenues from 1955 to 2005'</span>, <span style="color:#6a8759;">'Revenue (millions)'</span><span style="color:#e8ba36;">)</span></pre></div><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic11.png" /></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">&nbsp;</span></p><p class="MsoNormal"><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;">对数据结果进行标准差处理</span><span style="mso-spacerun:'yes';font-family:宋体;mso-ascii-font-family:Calibri;
-mso-hansi-font-family:Calibri;mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;
-mso-font-kerning:1.0000pt;"><o:p></o:p></span></p><pre style="background-color:#2b2b2b;color:#a9b7c6;font-family:'JetBrains Mono',monospace;font-size:9.8pt;"><span style="color:#cc7832;">def </span>plot_with_std<span style="color:#e8ba36;">(</span>x, y, stds, ax, title, y_label<span style="color:#e8ba36;">)</span>:<br />ax.fill_between<span style="color:#e8ba36;">(</span>x, y - stds, y + stds, alpha=<span style="color:#6897bb;">0.2</span><span style="color:#e8ba36;">)<br /></span>plot<span style="color:#e8ba36;">(</span>x, y, ax, title, y_label<span style="color:#e8ba36;">)<br /></span>fig, <span style="color:#e8ba36;">(</span>ax1, ax2<span style="color:#e8ba36;">) </span>= plt.subplots<span style="color:#e8ba36;">(</span>ncols=<span style="color:#6897bb;">2</span><span style="color:#e8ba36;">)<br /></span>title = <span style="color:#6a8759;">'Increase in mean and std Fortune 500 company %s from 1955 to 2005'<br /></span>stds1 = group_by_year.std<span style="color:#e8ba36;">()</span>.profit.values<br />stds2 = group_by_year.std<span style="color:#e8ba36;">()</span>.revenue.values<br />plot_with_std<span style="color:#e8ba36;">(</span>x, y1.values, stds1, ax1, title % <span style="color:#6a8759;">'profits'</span>, <span style="color:#6a8759;">'Profit (millions)'</span><span style="color:#e8ba36;">)<br /></span>plot_with_std<span style="color:#e8ba36;">(</span>x, y2.values, stds2, ax2, title % <span style="color:#6a8759;">'revenues'</span>, <span style="color:#6a8759;">'Revenue (millions)'</span><span style="color:#e8ba36;">)<br /></span>fig.set_size_inches<span style="color:#e8ba36;">(</span><span style="color:#6897bb;">14</span>, <span style="color:#6897bb;">4</span><span style="color:#e8ba36;">)<br /></span>fig.tight_layout<span style="color:#e8ba36;">()</span></pre><p class="MsoNormal"><img src="https://github.com/itisnotarobot/AndroidProject/blob/main/%E5%AE%9E%E9%AA%8C3_Notebook%E5%9F%BA%E7%A1%80%E5%AE%9E%E8%B7%B5/images/pic12.png" /></p>
+```python
+print('Hello World')
+```
+
+    Hello World
+    
+
+
+```python
+import time
+time.sleep(3)
+```
+
+
+```python
+import numpy as np
+def square(x):
+    return x * x
+
+```
+
+
+```python
+x = np.random.randint(1, 10)
+y = square(x)
+print('%d squared is %d' % (x, y))
+
+```
+
+    4 squared is 16
+    
+
+
+```python
+%matplotlib inline
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+
+
+```python
+df = pd.read_csv('fortune500.csv')
+```
+
+
+```python
+df.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Rank</th>
+      <th>Company</th>
+      <th>Revenue (in millions)</th>
+      <th>Profit (in millions)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1955</td>
+      <td>1</td>
+      <td>General Motors</td>
+      <td>9823.5</td>
+      <td>806</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1955</td>
+      <td>2</td>
+      <td>Exxon Mobil</td>
+      <td>5661.4</td>
+      <td>584.8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1955</td>
+      <td>3</td>
+      <td>U.S. Steel</td>
+      <td>3250.4</td>
+      <td>195.4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1955</td>
+      <td>4</td>
+      <td>General Electric</td>
+      <td>2959.1</td>
+      <td>212.6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1955</td>
+      <td>5</td>
+      <td>Esmark</td>
+      <td>2510.8</td>
+      <td>19.1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+df.tail()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Rank</th>
+      <th>Company</th>
+      <th>Revenue (in millions)</th>
+      <th>Profit (in millions)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>25495</th>
+      <td>2005</td>
+      <td>496</td>
+      <td>Wm. Wrigley Jr.</td>
+      <td>3648.6</td>
+      <td>493</td>
+    </tr>
+    <tr>
+      <th>25496</th>
+      <td>2005</td>
+      <td>497</td>
+      <td>Peabody Energy</td>
+      <td>3631.6</td>
+      <td>175.4</td>
+    </tr>
+    <tr>
+      <th>25497</th>
+      <td>2005</td>
+      <td>498</td>
+      <td>Wendy's International</td>
+      <td>3630.4</td>
+      <td>57.8</td>
+    </tr>
+    <tr>
+      <th>25498</th>
+      <td>2005</td>
+      <td>499</td>
+      <td>Kindred Healthcare</td>
+      <td>3616.6</td>
+      <td>70.6</td>
+    </tr>
+    <tr>
+      <th>25499</th>
+      <td>2005</td>
+      <td>500</td>
+      <td>Cincinnati Financial</td>
+      <td>3614.0</td>
+      <td>584</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+df.columns = ['year', 'rank', 'company', 'revenue', 'profit']
+```
+
+
+```python
+len(df)
+```
+
+
+
+
+    25500
+
+
+
+
+```python
+df.dtypes
+```
+
+
+
+
+    year         int64
+    rank         int64
+    company     object
+    revenue    float64
+    profit      object
+    dtype: object
+
+
+
+
+```python
+non_numberic_profits = df.profit.str.contains('[^0-9.-]')
+df.loc[non_numberic_profits].head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>rank</th>
+      <th>company</th>
+      <th>revenue</th>
+      <th>profit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>228</th>
+      <td>1955</td>
+      <td>229</td>
+      <td>Norton</td>
+      <td>135.0</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <th>290</th>
+      <td>1955</td>
+      <td>291</td>
+      <td>Schlitz Brewing</td>
+      <td>100.0</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <th>294</th>
+      <td>1955</td>
+      <td>295</td>
+      <td>Pacific Vegetable Oil</td>
+      <td>97.9</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <th>296</th>
+      <td>1955</td>
+      <td>297</td>
+      <td>Liebmann Breweries</td>
+      <td>96.0</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <th>352</th>
+      <td>1955</td>
+      <td>353</td>
+      <td>Minneapolis-Moline</td>
+      <td>77.4</td>
+      <td>N.A.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+len(df.profit[non_numberic_profits])
+
+```
+
+
+
+
+    369
+
+
+
+
+```python
+bin_sizes, _, _ = plt.hist(df.year[non_numberic_profits], bins=range(1955, 2006))
+
+```
+
+
+    
+![png](output_13_0.png)
+    
+
+
+
+```python
+df = df.loc[~non_numberic_profits]
+df.profit = df.profit.apply(pd.to_numeric)
+
+```
+
+
+```python
+len(df)
+
+```
+
+
+
+
+    25131
+
+
+
+
+```python
+df.dtypes
+
+```
+
+
+
+
+    year         int64
+    rank         int64
+    company     object
+    revenue    float64
+    profit     float64
+    dtype: object
+
+
+
+
+```python
+group_by_year = df.loc[:, ['year', 'revenue', 'profit']].groupby('year')
+avgs = group_by_year.mean()
+x = avgs.index
+y1 = avgs.profit
+def plot(x, y, ax, title, y_label):
+    ax.set_title(title)
+    ax.set_ylabel(y_label)
+    ax.plot(x, y)
+    ax.margins(x=0, y=0)
+
+```
+
+
+```python
+fig, ax = plt.subplots()
+plot(x, y1, ax, 'Increase in mean Fortune 500 company profits from 1955 to 2005', 'Profit (millions)')
+
+```
+
+
+    
+![png](output_18_0.png)
+    
+
+
+
+```python
+y2 = avgs.revenue
+fig, ax = plt.subplots()
+plot(x, y2, ax, 'Increase in mean Fortune 500 company revenues from 1955 to 2005', 'Revenue (millions)')
+
+```
+
+
+    
+![png](output_19_0.png)
+    
+
+
+
+```python
+def plot_with_std(x, y, stds, ax, title, y_label):
+    ax.fill_between(x, y - stds, y + stds, alpha=0.2)
+    plot(x, y, ax, title, y_label)
+fig, (ax1, ax2) = plt.subplots(ncols=2)
+title = 'Increase in mean and std Fortune 500 company %s from 1955 to 2005'
+stds1 = group_by_year.std().profit.values
+stds2 = group_by_year.std().revenue.values
+plot_with_std(x, y1.values, stds1, ax1, title % 'profits', 'Profit (millions)')
+plot_with_std(x, y2.values, stds2, ax2, title % 'revenues', 'Revenue (millions)')
+fig.set_size_inches(14, 4)
+fig.tight_layout()
+
+```
+
+
+    
+![png](output_20_0.png)
+    
+
+
+
+```python
+
+```
